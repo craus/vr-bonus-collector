@@ -680,6 +680,7 @@ public static class Extensions
         return (slider.value - slider.minValue) / (slider.maxValue - slider.minValue);
     }
 
+#if UNITY_EDITOR
     [MenuItem("Utilities/Mesh Renderer/Make phantom (does not work)")]
     public static void MakePhantom()
     {
@@ -695,6 +696,7 @@ public static class Extensions
             }
         });
     }
+#endif
 
     public static void MakePhantom(MeshRenderer r)
     {
